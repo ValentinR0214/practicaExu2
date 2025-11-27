@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define el nombre del proyecto de Docker Compose aquí
-        PROJECT_NAME = 'practicaExu2-rvrh-10c'
+        PROJECT_NAME = 'practica-exu2-rvrh-10c'
     }
 
     stages{
