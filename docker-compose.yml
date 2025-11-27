@@ -1,7 +1,7 @@
 services: 
   calculator: 
-    container_name: exu2-calculadora
-    image: calculator:v1.0.1
+    container_name: exu2-calculadoras
+    image: calculators:v1.0.1
     build:
       context: ./client
       args:
@@ -12,14 +12,14 @@ services:
       - exu2-rvrh-net
 
   operations: 
-    container_name: exu2-operaciones
-    image: operations:v1.0.1
+    container_name: exu2-operacioness
+    image: operationss:v1.0.1
     build:
       context: ./server
     environment:
       SERVER_PORT: 8080
     ports:
-      - "8081:8080"
+      - "8082:8080"
     networks:
       - exu2-rvrh-net
 
